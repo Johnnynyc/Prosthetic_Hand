@@ -34,7 +34,6 @@ __Arduino Setup__
 
 # Test Cases:
 Initialize VCC and the resistor being used 
-
 float VCC = 5.00;		      //voltage
 float R_DIV = 10000.0;    //resistance
 
