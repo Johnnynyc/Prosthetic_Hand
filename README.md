@@ -22,10 +22,12 @@ __3D Model Hand__
 3. Attach fingers to base, and connect them to the end of a servo motor using a fishing line  
 
 __Flex Sensors__
+
 4. Attach flex sensors onto gloves using glue/sew  
 5. Create voltage divider rule using 10k ohms resistor and flex sensors  
 
 __Arduino Setup__
+
 6. Read analog pin reading from voltage in between the two resistors ranging from (0 to 1023)  
 7. Map the servo motor to analog pin read (As flex sensors bend, analog reading starts decreasing)
 
