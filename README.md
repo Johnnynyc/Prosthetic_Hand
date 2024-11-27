@@ -34,21 +34,18 @@ __Arduino Setup__
 
 # Test Cases:
 Initialize VCC and the resistor being used 
-float VCC = 5.00;		      //voltage
-float R_DIV = 10000.0;    //resistance
+- float VCC = 5.00;		      //voltage
+- float R_DIV = 10000.0;    //resistance
 
 Reads analog value based on the flex sensors ranging fromm (0 to 1023)
-
-int flexADC = analogRead(flexpin1);
-Serial.println("Analog 1 reading: " + flexADC);
+- int flexADC = analogRead(flexpin1);
+- Serial.println("Analog 1 reading: " + flexADC);
 
 Calculates the voltage across the flex sensor
-
-float flexV = flexADC * VCC / 1023.0;
+- float flexV = flexADC * VCC / 1023.0;
 
 Calculate the resistance being omitted from the flex sensors (As it bends, resistance increases)
-
-float flexR = R_DIV * (VCC / flexV - 1.0);    //Resistance of the flex sensor
-Serial.println("Flex Sensor 1, Resistance: " + String(flexR) + " ohms");
+- float flexR = R_DIV * (VCC / flexV - 1.0);    //Resistance of the flex sensor
+- Serial.println("Flex Sensor 1, Resistance: " + String(flexR) + " ohms");
 
 
