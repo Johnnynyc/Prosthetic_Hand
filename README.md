@@ -37,7 +37,7 @@ Initialize VCC and the resistor being used
 - float VCC = 5.00;		      //voltage
 - float R_DIV = 10000.0;    //resistance
 
-Reads analog value based on the flex sensors ranging fromm (0 to 1023)
+Reads analog value based on the flex sensors ranging from (0 to 1023)
 - int flexADC = analogRead(flexpin1);
 - Serial.println("Analog 1 reading: " + flexADC);
 
